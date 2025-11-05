@@ -25,10 +25,10 @@ public class TimeCalc {
       if (newHours>10 && newMinutes<10) {time =  + newHours + ":0" + newMinutes;}
       if (newHours>10 && newMinutes>10) {time =  + newHours + ":" + newMinutes;}
       if (newHours==10 && newMinutes==10) {time =  + newHours + ":" + newMinutes;}
-       if (newHours==10 && newMinutes>10) {time =  + newHours + ":" + newMinutes;}
-       if (newHours==10 && newMinutes<10) {time =  + newHours + ":0" + newMinutes;}
-       if (newHours>10 && newMinutes==10) {time =  + newHours + ":" + newMinutes;}
-       if (newHours<10 && newMinutes==10) {time = "0" + newHours + ":" + newMinutes;}
+      if (newHours==10 && newMinutes>10) {time =  + newHours + ":" + newMinutes;}
+      if (newHours==10 && newMinutes<10) {time =  + newHours + ":0" + newMinutes;}
+      if (newHours>10 && newMinutes==10) {time =  + newHours + ":" + newMinutes;}
+      if (newHours<10 && newMinutes==10) {time = "0" + newHours + ":" + newMinutes;}
 
 
 

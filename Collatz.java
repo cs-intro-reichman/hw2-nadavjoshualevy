@@ -8,25 +8,26 @@ public class Collatz {
             int temp = i;
             int sequenceLength = 0;
 
-            while (temp != 1) {
+            do {
                 if (isVerbose) {
                     System.out.print(temp + " ");
                 }
-                
-                sequenceLength++; 
+                sequenceLength++;
 
                 if (temp % 2 == 0) {
                     temp = temp / 2;
                 } else {
                     temp = (temp * 3) + 1;
                 }
-            }
-            
+            } while (temp != 1);
+
             sequenceLength++;
-            
             if (isVerbose) {
                 System.out.print(1);
-                System.out.println(" (" + sequenceLength + ")"); 
+            }
+
+            if (isVerbose) {
+                System.out.println(" (" + sequenceLength + ")");
             }
         }
 

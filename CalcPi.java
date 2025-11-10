@@ -4,7 +4,6 @@ public class CalcPi {
 	  
 		int terms = Integer.parseInt(args[0]);
 		double count = 0.0;
-		double pie = Math.PI;
 		for (int i = 0; i<terms; i++){
 			double neo = 2 * i + 1;
 			double neoq = 1.0/neo;
